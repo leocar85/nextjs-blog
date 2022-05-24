@@ -3,6 +3,8 @@ import Link from 'next/link';
 import Head from 'next/head';
 import styled from '@emotion/styled';
 
+import { FeedbackForm } from '@components/FeedbackForm';
+
 const Container = styled.div`
   padding: 0 2rem;
 `;
@@ -68,6 +70,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
             </Link>
           ))}
         </List>
+        <FeedbackForm />
       </Main>
     </Container>
   )
